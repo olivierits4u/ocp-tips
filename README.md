@@ -2,6 +2,8 @@
 
 ## build config avec git password & config map
 
+cas d'utilisation: un build config qui utilise un repo privé, et qui a besoin d'un fichier settings.xml custom pour les dépendances maven
+
 ```
 #création du secret
 oc create secret generic githubsecret \
