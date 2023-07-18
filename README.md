@@ -24,14 +24,13 @@ oc create cm build-cm --from-file=settings.xml
 ```
 ensuite éditer le build config
 ```
-source:
+  source:
     git:
-      uri: https://github.com/XXXX/YYYY
+      uri: https://github.com/olivierits4u/api
     sourceSecret:
       name: github
     configMaps:
       - configMap:
           name: build-cm
         destinationDir: /tmp/src/configuration
-    type: Git
 ```
