@@ -1,6 +1,6 @@
 # ocp-tips
 
-## build config & git password & config map pour le build config
+## build config avec git password & config map
 
 ```
 #création du secret
