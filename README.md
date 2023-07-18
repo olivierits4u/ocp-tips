@@ -26,7 +26,7 @@ ensuite éditer le build config
 ```
   source:
     git:
-      uri: https://github.com/olivierits4u/api
+      uri: https://github.com/XXXX/YYYY
     sourceSecret:
       name: github
     configMaps:
