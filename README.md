@@ -36,3 +36,14 @@ ensuite éditer le build config
           name: build-cm
         destinationDir: /tmp/src/configuration
 ```
+
+
+## donner les accès à une registry docker pour les process de builds
+```
+oc create secret generic regcred  \
+	--type kubernetes.io/dockerconfigjson \
+	--from-file=.dockerconfigjson=/PATH/TO/FILE/config.json ;
+oc secrets link builder regcred && \
+	oc secrets link default regcred --for pull
+
+```
