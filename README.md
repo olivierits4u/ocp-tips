@@ -2,7 +2,7 @@
 
 ## build config avec git password & config map
 
-cas d'utilisation: un build config qui utilise un repo git privé, et qui a besoin d'un fichier "settings.xml" custom pour les dépendances maven
+cas d'utilisation: un build config qui utilise un repo git privé, et qui a besoin d'un fichier "settings.xml" custom pour les dépendences maven
 
 ```
 #création du secret
