@@ -9,4 +9,9 @@ oc create secret generic githubsecret \
 	 --from-literal password=MY_PASSWORD \
 	 --from-literal username=MY_USERNAME
 
+#création de la config map
+oc create cm build-cm --from-file=settings.xml
+
+
+
 ```
